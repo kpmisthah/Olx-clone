@@ -40,7 +40,7 @@ const Navbar = ({toggleModal,toggleModalSell}:Toggle) => {
           <img src={arrow} alt="" className="w-5 cursor-pointer" />
         </div>
         {!user?(
-          <p className='font-bold underline ml-5 cursor-pointer' style={{color:'#002f34'}}>Login</p>
+          <p className='font-bold underline ml-5 cursor-pointer' style={{color:'#002f34'}} onClick={toggleModal}>Login</p>
         ):(
           <div className='relative'>
             <p style={{color:'#002f34'}} className='font-bold ml-5 cursor-pointer'>{user.displayName?.split(' ')[0]}</p>
